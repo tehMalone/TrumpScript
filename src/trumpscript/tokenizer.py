@@ -53,7 +53,7 @@ class Tokenizer:
             while i < len(data):
 
                 '''
-                    Facts and Lies will flip/flop depending on Trump's mood every few minutes. 
+                    Facts and Lies will flip/flop depending on Trump's mood every few minutes.
                     If your code fails, try again in a bit. Trump might have changed his mind.
                 '''
                 random.seed(datetime.now().time().minute)
@@ -138,7 +138,7 @@ class Tokenizer:
                             tokens.append(Tokenizer.toke(T_False, None, line))
                         else:
                             tokens.append(Tokenizer.toke(T_True, None, line))
-                    elif word == "false" or word == "lies" or word == "nonsense" or word == "lie":
+                    elif word == "false" or word == "lies" or word == "nonsense" or word == "lie" or word == "wrong":
                         if (flip_flop):
                             tokens.append(Tokenizer.toke(T_True, None, line))
                         else:
